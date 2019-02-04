@@ -1,0 +1,66 @@
+
+
+<body>
+<!-- <link rel="stylesheet" href="{{url_for('static',filename='css/style.css')}}"></link> -->
+
+{% macro displayArticlesList(article_list) %}
+
+<div class="container">
+
+<div classs='row'>
+    {% for article in article_list %}
+<div class="col-md-4" id='line' style='float:left;'>
+<h3>{{ article.title}}</h3>
+<!-- <h4>{{ article.author}}</h3> -->
+        <img  src="{{article.urlToImage}}" class="img-responsive img-thumbnail ImageBorder" width="300" height="300" >
+<h4>{{ article.description}}</h4>
+<!-- <h2>{{ article.publishedAt}}</h2> -->
+<a href='{{ article.url}}'>&nbsp; &nbsp;<button type="button" class="btn btn-outline-info">Read more</button></a>
+
+
+
+</div>
+{% endfor %}
+</div>
+
+
+{% endmacro %}
+
+
+{% macro displaySourcesList(source_list) %}
+<div class="container">
+<div classs='row'>
+    {% for source in source_list %}
+<div class="col-md-4" id='line'>
+<div class='row'>
+    <div class="thumbnail">
+
+<h2><font face="verdana" >{{ source.name}}</h2>
+ <h3><font face="verdana">{{ source.description}}</h3>
+<a href='{{ source.url}}'><button type="button" class="btn btn-outline-info">visit site</button></a>&nbsp; &nbsp;
+<a href="/source/{{source.id}}" ><button type="button" class="btn btn-outline-info">Top-headlines</button></a>
+<!-- <h1><font face="verdana" color="Red">{{ source.language}}</h1>
+<h1><font face="verdana" color="Red">{{ source.country}}</h1> -->
+
+        <!-- <div class="btn-group toolTipgroup">
+          <a class="btn" href="#" data-placement="top" data-original-title="do you like?"><i class="icon-thumbs-up"></i></a>
+          <a class="btn" href="#" data-placement="top" data-original-title="dont like?"><i class="icon-thumbs-down"></i></a>
+        </div> -->
+
+
+    </div>
+</div>
+
+</div>
+    {% endfor %}
+
+</div>
+</div>
+</div>
+
+
+
+{% endmacro %}
+<script src="{{url_for('static',filename='js/logic.js')}}"></script>
+
+</body>
