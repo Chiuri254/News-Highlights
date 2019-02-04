@@ -1,23 +1,20 @@
-**__SPECIFICATIONS__**
-1. Python language used.**flask**
-2. Creation on Ubuntu 16.04
-3. Uses python tool called pip or pip3
-4. This application uses the heroku master application structure
-5. API-key and Base_url required for requesting
-6. When pushing to heroku one is required to have an  account to heroku [heroku account](heroku.com)
-7. Heroku CLI pages [HEROKU CLI](https://devcenter.heroku.com/articles/heroku-cli)
-8. virtual environment installing ***sudo apt-get install pytho3.6-venv***
-9. Gunicorn this helps in hosting our application to Heroku ***python3.6 -m  pip install gunicorn***
-10. Two base urls used in the request:
-            * CATEGORY_BASE_URL ='https://newsapi.org/v2/sources?language=en&category={}&apiKey={}'
-            * NEWS_API_BASE_URL ='https://newsapi.org/v2/{}?apiKey={}&language=en'
+## Behaviors of the Application
+* The program should display news sources:
 
+     **Input Example**: On page load
 
+     **Output Example**: Panels of various news sources is displayed per category
 
-**__FEATURES__**
-1. User is able to read latest news headlines... including the top headlines in each source
-2. User is able to view various news sources like ABC, CNN, BBC etc. They can either visit the site or just view the top headlines
-3. User is able to view top-headlines and articles.
-4. Articles display images while sources are links
+* The program should display articles from a selected news source:
 
-***__PLEASE CHECK OUT THE REQUIREMENTS IN THE REQUIREMENTS.TXT FILE__***
+     **Input Example**: Click on **See more from this site** button
+
+     **Output Example**: Redirected to a page with a list of articles from the selected source
+
+* The program should display original news page of the selected article:
+
+     **Input Example**: Click on **Read more...** button
+
+     **Output Example**: Redirected to the original source page with the full story on the article
+     ## Setup/Installation Requirements
+     To start using this project use the following commands:
