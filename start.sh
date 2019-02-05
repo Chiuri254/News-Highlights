@@ -1,5 +1,6 @@
-export NEWS_API_KEY='f0554c44c0aa4bbf8c919ff56083b830'
-export SECRET_KEY='32451618'
+export NEWS_API_KEY='c6d1b0cc27304febb54edbfc6503185e'
+export SECRET_KEY='brightonnews'
+
 
 
 python3.6 manage.py server

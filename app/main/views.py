@@ -9,9 +9,7 @@ def index():
     '''
     View root page function that returns the index page and its data
     '''
-
-    # Getting articles and sources
-
+    
     articles = get_articles('top-headlines')
     # print(get_articles)
 
