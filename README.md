@@ -43,7 +43,7 @@ You need the following to work on the project:
 -virtualenv
 -A text  Editor`
 ## Link to Live Website
-https://new-highlights-flask.herokuapp.com/
+https://new-highlights.herokuapp.com/
 
 ## Technologies Used
 * Python
